@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7298">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--About-->
+        <!--Tab Bar Controller-->
+        <!--Browse-->
+        <!--About-->
+        <!--Items-->
+        <!--Title-->
+        <!--New Item-->
+        <scene sceneID="7297">
+            <objects>
+                <navigationController id="7298" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7300">
+                        <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="7377" destination="7329" kind="relationship" relationship="rootViewController"/>
+                        <segue id="7675" destination="7320" kind="showDetail" identifier="showLobbyNav"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7301" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="-179"/>
+        </scene>
+        <scene sceneID="7319">
+            <objects>
+                <navigationController id="7320" sceneMemberID="viewController" modalPresentationStyle="fullScreen">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7322">
+                        <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="7730" destination="7680" kind="relationship" relationship="rootViewController"/>
+                        <segue id="9656" destination="9410" kind="show" identifier="showGameLobby"/>
+                        <segue id="9767" destination="9666" kind="show" identifier="showCreateGameView"/>
+                        <segue id="23729" destination="23291" kind="showDetail" identifier="showNormalGameView"/>
+                        <segue id="23826" destination="23318" kind="showDetail" identifier="showCzarGameView"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7323" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="566"/>
+        </scene>
+        <scene sceneID="7328">
+            <objects>
+                <viewController id="7329" sceneMemberID="viewController" customClass="SplashViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="20612"/>
+                        <viewControllerLayoutGuide type="bottom" id="20613"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7330">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7379" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="164" y="400" width="46" height="30"/>
+                                <state key="normal" title="Begin"/>
+                                <connections>
+                                    <action selector="SplashEnterButton_TouchUpInside:" destination="7329" id="7381" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="8344" text="Welcome to fuckaround.iOS. To begin, enter a name below then hit 'Start' to enter the game." translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="25" y="125" width="325" height="179"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="8345" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Name..." misplaced="YES">
+                                <rect key="frame" x="25" y="350" width="325" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint id="21822" firstItem="8344" firstAttribute="top" secondItem="20612" secondAttribute="bottom" constant="27"/>
+                            <constraint id="21823" firstItem="8344" firstAttribute="trailing" secondItem="7330" secondAttribute="trailingMargin" constant="9"/>
+                            <constraint id="21824" firstItem="8344" firstAttribute="leading" secondItem="7330" secondAttribute="leadingMargin" constant="9"/>
+                            <constraint id="21825" firstItem="8345" firstAttribute="top" secondItem="8344" secondAttribute="bottom" constant="42"/>
+                            <constraint id="21826" firstItem="7379" firstAttribute="top" secondItem="8345" secondAttribute="bottom" constant="27"/>
+                            <constraint id="21827" firstItem="7379" firstAttribute="leading" secondItem="7330" secondAttribute="leadingMargin" constant="148"/>
+                            <constraint id="21829" firstAttribute="trailingMargin" secondItem="7379" secondAttribute="trailing" constant="149"/>
+                            <constraint id="21830" firstItem="8345" firstAttribute="leading" secondItem="7330" secondAttribute="leadingMargin" constant="9"/>
+                            <constraint id="21831" firstItem="8345" firstAttribute="trailing" secondItem="7330" secondAttribute="trailingMargin" constant="9"/>
+                            <constraint id="22402" firstItem="20613" firstAttribute="top" secondItem="7379" secondAttribute="bottom" constant="262"/>
+                            <constraint id="22952" firstItem="8344" firstAttribute="width" secondItem="8345" secondAttribute="width"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="Welcome" id="7376" key="navigationItem"/>
+                    <connections>
+                        <outlet property="splashEnterButton" destination="7379" id="name-outlet-7379"/>
+                        <outlet property="splashNameField" destination="8345" id="name-outlet-8345"/>
+                        <outlet property="splashPrompt" destination="8344" id="name-outlet-8344"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7331" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="-174"/>
+        </scene>
+        <scene sceneID="7679">
+            <objects>
+                <viewController id="7680" sceneMemberID="viewController" customClass="LobbyViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="20614"/>
+                        <viewControllerLayoutGuide type="bottom" id="20615"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7681">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9658" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="164" y="617" width="46" height="30"/>
+                                <state key="normal" title="Create"/>
+                                <connections>
+                                    <action selector="CreateGameButton_TouchUpInside:" destination="7680" id="9773" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9404" key="tableHeaderView" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="25" y="406" width="325" height="164"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="21085">
+                                        <rect key="frame" x="0.0" y="28" width="325" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="21085" id="21086">
+                                            <rect key="frame" x="0.0" y="0.0" width="325" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="19131" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="25" y="125" width="325" height="176"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="21083">
+                                        <rect key="frame" x="0.0" y="28" width="325" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="21083" id="21084">
+                                            <rect key="frame" x="0.0" y="0.0" width="325" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click a game below to join in..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="22673" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="25" y="358" width="325" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="21315" firstItem="19131" firstAttribute="leading" secondItem="7681" secondAttribute="leadingMargin" constant="9"/>
+                            <constraint id="21316" firstAttribute="trailingMargin" secondItem="19131" secondAttribute="trailing" constant="9"/>
+                            <constraint id="21317" firstItem="19131" firstAttribute="top" secondItem="20614" secondAttribute="bottom" constant="55"/>
+                            <constraint id="21318" firstItem="9658" firstAttribute="top" secondItem="9404" secondAttribute="bottom" constant="47"/>
+                            <constraint id="21319" firstItem="20615" firstAttribute="top" secondItem="9658" secondAttribute="bottom" constant="20"/>
+                            <constraint id="21322" firstItem="19131" firstAttribute="width" secondItem="9404" secondAttribute="width"/>
+                            <constraint id="21323" firstItem="9404" firstAttribute="height" secondItem="19131" secondAttribute="height"/>
+                            <constraint id="21570" firstItem="9404" firstAttribute="leading" secondItem="7681" secondAttribute="leadingMargin" constant="9"/>
+                            <constraint id="21571" firstAttribute="trailingMargin" secondItem="9404" secondAttribute="trailing" constant="9"/>
+                            <constraint id="22674" firstItem="22673" firstAttribute="top" secondItem="19131" secondAttribute="bottom" constant="57"/>
+                            <constraint id="22675" firstItem="9404" firstAttribute="top" secondItem="22673" secondAttribute="bottom" constant="27"/>
+                            <constraint id="22676" firstAttribute="trailingMargin" secondItem="22673" secondAttribute="trailing" constant="9"/>
+                            <constraint id="22677" firstItem="22673" firstAttribute="leading" secondItem="7681" secondAttribute="leadingMargin" constant="9"/>
+                            <constraint id="22950" firstAttribute="trailingMargin" secondItem="9658" secondAttribute="trailing" constant="149"/>
+                            <constraint id="22951" firstItem="9658" firstAttribute="leading" secondItem="7681" secondAttribute="leadingMargin" constant="148"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="Lobby" id="7729" key="navigationItem"/>
+                    <connections>
+                        <outlet property="createGameButton" destination="9658" id="name-outlet-9658"/>
+                        <outlet property="joinableGameList" destination="9404" id="name-outlet-9404"/>
+                        <outlet property="waitingRoomList" destination="19131" id="name-outlet-19131"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7682" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121" y="556"/>
+        </scene>
+        <scene sceneID="9409">
+            <objects>
+                <viewController id="9410" sceneMemberID="viewController" customClass="GameLobbyViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="20616"/>
+                        <viewControllerLayoutGuide type="bottom" id="20617"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9411">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9659" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="25" y="125" width="325" height="439"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9660">
+                                        <rect key="frame" x="0.0" y="28" width="325" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9660" id="9661">
+                                            <rect key="frame" x="0.0" y="0.0" width="325" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9662" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="164" y="590" width="46" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="GameLobbyStartButton_TouchUpInside:" destination="9410" id="23828" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="23265" firstItem="9659" firstAttribute="top" secondItem="20616" secondAttribute="bottom" constant="55"/>
+                            <constraint id="23266" firstItem="9662" firstAttribute="top" secondItem="9659" secondAttribute="bottom" constant="26"/>
+                            <constraint id="23267" firstItem="20617" firstAttribute="top" secondItem="9662" secondAttribute="bottom" constant="47"/>
+                            <constraint id="23268" firstItem="9659" firstAttribute="leading" secondItem="9411" secondAttribute="leadingMargin" constant="9"/>
+                            <constraint id="23269" firstAttribute="trailingMargin" secondItem="9659" secondAttribute="trailing" constant="9"/>
+                            <constraint id="23270" firstAttribute="trailingMargin" secondItem="9662" secondAttribute="trailing" constant="149"/>
+                            <constraint id="23271" firstItem="9662" firstAttribute="leading" secondItem="9411" secondAttribute="leadingMargin" constant="148"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameLobbyStartButton" destination="9662" id="name-outlet-9662"/>
+                        <outlet property="gamePeerList" destination="9659" id="name-outlet-9659"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9412" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="811"/>
+        </scene>
+        <scene sceneID="9665">
+            <objects>
+                <viewController id="9666" sceneMemberID="viewController" customClass="GameCreateController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="20618"/>
+                        <viewControllerLayoutGuide type="bottom" id="20619"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9667">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="9769" translatesAutoresizingMaskIntoConstraints="NO" text="Enter a name for your game then hit begin" misplaced="YES">
+                                <rect key="frame" x="25" y="125" width="325" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="9770" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Game Name..." misplaced="YES">
+                                <rect key="frame" x="25" y="309" width="325" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9771" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="164" y="391" width="46" height="30"/>
+                                <state key="normal" title="Begin"/>
+                                <connections>
+                                    <action selector="GameCreateBegin_TouchUpInside:" destination="9666" id="9872" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="22953" firstItem="9770" firstAttribute="top" secondItem="9769" secondAttribute="bottom" constant="56"/>
+                            <constraint id="22954" firstItem="9769" firstAttribute="top" secondItem="20618" secondAttribute="bottom" constant="55"/>
+                            <constraint id="22955" firstItem="9771" firstAttribute="top" secondItem="9770" secondAttribute="bottom" constant="52"/>
+                            <constraint id="22956" firstItem="20619" firstAttribute="top" secondItem="9771" secondAttribute="bottom" constant="246"/>
+                            <constraint id="22957" firstItem="9769" firstAttribute="width" secondItem="9770" secondAttribute="width"/>
+                            <constraint id="22958" firstItem="9769" firstAttribute="leading" secondItem="9667" secondAttribute="leadingMargin" constant="9"/>
+                            <constraint id="22959" firstAttribute="trailingMargin" secondItem="9769" secondAttribute="trailing" constant="9"/>
+                            <constraint id="22960" firstItem="9770" firstAttribute="leading" secondItem="9667" secondAttribute="leadingMargin" constant="9"/>
+                            <constraint id="22961" firstAttribute="trailingMargin" secondItem="9770" secondAttribute="trailing" constant="9"/>
+                            <constraint id="22962" firstAttribute="trailingMargin" secondItem="9771" secondAttribute="trailing" constant="149"/>
+                            <constraint id="22963" firstItem="9771" firstAttribute="leading" secondItem="9667" secondAttribute="leadingMargin" constant="148"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameNameText" destination="9770" id="name-outlet-9770"/>
+                        <outlet property="gameCreateBegin" destination="9771" id="name-outlet-9771"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9668" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1123" y="1289"/>
+        </scene>
+        <scene sceneID="23285">
+            <objects>
+                <viewController id="23286" sceneMemberID="viewController" customClass="NormalGameController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="23278"/>
+                        <viewControllerLayoutGuide type="bottom" id="23279"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="23287" translatesAutoresizingMaskIntoConstraints="NO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0.666666666666667" alpha="1"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="24155" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="225" y="27" width="125" height="190"/>
+                                <color key="backgroundColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0" alpha="1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" id="24156" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="25" y="27" width="125" height="190.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint id="29038" firstAttribute="width" secondItem="24156" secondAttribute="height" multiplier="25:38"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="24496" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="24499" scrollDirection="horizontal">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <rect key="frame" x="25" y="382" width="325" height="198"/>
+                                <color key="backgroundColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0.333333333333333" alpha="1"/>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="24500" firstItem="24156" firstAttribute="top" secondItem="23278" secondAttribute="bottom" constant="7"/>
+                            <constraint id="24501" firstItem="24155" firstAttribute="top" secondItem="23278" secondAttribute="bottom" constant="7"/>
+                            <constraint id="24518" firstItem="24155" firstAttribute="leading" secondItem="24156" secondAttribute="trailing" constant="75" relation="lessThanOrEqual"/>
+                            <constraint id="24519" firstAttribute="trailingMargin" secondItem="24155" secondAttribute="trailing" constant="9"/>
+                            <constraint id="24520" firstItem="24156" firstAttribute="leading" secondItem="23287" secondAttribute="leadingMargin" constant="9"/>
+                            <constraint id="24521" firstItem="24496" firstAttribute="top" secondItem="24156" secondAttribute="bottom" constant="172"/>
+                            <constraint id="24522" firstItem="24496" firstAttribute="top" secondItem="24155" secondAttribute="bottom" constant="172"/>
+                            <constraint id="24523" firstItem="24496" firstAttribute="leading" secondItem="23287" secondAttribute="leadingMargin" constant="9"/>
+                            <constraint id="24524" firstAttribute="trailingMargin" secondItem="24496" secondAttribute="trailing" constant="9"/>
+                            <constraint id="24525" firstItem="23279" firstAttribute="top" secondItem="24496" secondAttribute="bottom" constant="37"/>
+                            <constraint id="28181" firstItem="24496" firstAttribute="height" secondItem="24155" secondAttribute="height"/>
+                            <constraint id="29085" firstItem="24155" firstAttribute="height" secondItem="24156" secondAttribute="height"/>
+                            <constraint id="29086" firstItem="24155" firstAttribute="width" secondItem="24156" secondAttribute="width"/>
+                            <constraint id="29476" firstItem="24155" firstAttribute="leading" secondItem="24156" secondAttribute="trailing" constant="5" relation="greaterThanOrEqual"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Game" id="23288"/>
+                    <connections>
+                        <outlet property="normalBlackCard" destination="24155" id="name-outlet-24155"/>
+                        <outlet property="normalWhiteCard" destination="24156" id="name-outlet-24156"/>
+                        <outlet property="normalCardDeck" destination="24496" id="name-outlet-24496"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23289" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2888" y="325"/>
+        </scene>
+        <scene sceneID="23290">
+            <objects>
+                <tabBarController id="23291" sceneMemberID="viewController" modalPresentationStyle="fullScreen">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="23294">
+                        <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="23286" kind="relationship" relationship="viewControllers" id="23292"/>
+                        <segue id="23411" destination="23308" kind="relationship" relationship="viewControllers"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23295" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2419" y="472"/>
+        </scene>
+        <scene sceneID="23307">
+            <objects>
+                <viewController id="23308" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="23303"/>
+                        <viewControllerLayoutGuide type="bottom" id="23304"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="23309">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Score" id="23310"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23311" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3416" y="755"/>
+        </scene>
+        <scene sceneID="23312">
+            <objects>
+                <viewController id="23313" sceneMemberID="viewController" customClass="CzarGameController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="23305"/>
+                        <viewControllerLayoutGuide type="bottom" id="23306"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="23314" translatesAutoresizingMaskIntoConstraints="NO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0.666666666666667" alpha="1"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="24502" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="25" y="382" width="325" height="198"/>
+                                <color key="backgroundColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0.333333333333333" alpha="1"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="24504" scrollDirection="horizontal">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" id="24505" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="25" y="27" width="125" height="190"/>
+                                <color key="backgroundColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="0" alpha="1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint id="29901" firstAttribute="width" secondItem="24505" secondAttribute="height" multiplier="25:38"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" id="24506" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" ambiguous="YES">
+                                <rect key="frame" x="225" y="27" width="125" height="190"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint id="24507" firstItem="24506" firstAttribute="leading" secondItem="24505" secondAttribute="trailing" constant="75" relation="lessThanOrEqual"/>
+                            <constraint id="24508" firstAttribute="trailingMargin" secondItem="24506" secondAttribute="trailing" constant="9"/>
+                            <constraint id="24509" firstItem="24505" firstAttribute="leading" secondItem="23314" secondAttribute="leadingMargin" constant="9"/>
+                            <constraint id="24510" firstItem="24505" firstAttribute="top" secondItem="23305" secondAttribute="bottom" constant="15"/>
+                            <constraint id="24511" firstItem="24506" firstAttribute="top" secondItem="23305" secondAttribute="bottom" constant="15"/>
+                            <constraint id="24512" firstItem="24502" firstAttribute="top" secondItem="24506" secondAttribute="bottom" constant="172"/>
+                            <constraint id="24513" firstItem="24502" firstAttribute="top" secondItem="24505" secondAttribute="bottom" constant="172"/>
+                            <constraint id="24514" firstItem="23306" firstAttribute="top" secondItem="24502" secondAttribute="bottom" constant="37"/>
+                            <constraint id="24515" firstItem="24502" firstAttribute="leading" secondItem="23314" secondAttribute="leadingMargin" constant="9"/>
+                            <constraint id="24516" firstAttribute="trailingMargin" secondItem="24502" secondAttribute="trailing" constant="9"/>
+                            <constraint id="29902" firstItem="24506" firstAttribute="height" secondItem="24505" secondAttribute="height"/>
+                            <constraint id="29903" firstItem="24506" firstAttribute="width" secondItem="24505" secondAttribute="width"/>
+                            <constraint id="29904" firstItem="24506" firstAttribute="leading" secondItem="24505" secondAttribute="trailing" constant="10" relation="greaterThanOrEqual"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Game" id="23315"/>
+                    <connections>
+                        <outlet property="czarBlackCard" destination="24505" id="name-outlet-24505"/>
+                        <outlet property="czarWhiteCard" destination="24506" id="name-outlet-24506"/>
+                        <outlet property="czarCardDeck" destination="24502" id="name-outlet-24502"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23316" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2884" y="1097"/>
+        </scene>
+        <scene sceneID="23317">
+            <objects>
+                <tabBarController id="23318" sceneMemberID="viewController" modalPresentationStyle="fullScreen">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="23321">
+                        <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="23313" kind="relationship" relationship="viewControllers" id="23319"/>
+                        <segue destination="23308" kind="relationship" relationship="viewControllers" id="23320"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23322" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2417" y="1255"/>
+        </scene>
+    </scenes>
+</document>

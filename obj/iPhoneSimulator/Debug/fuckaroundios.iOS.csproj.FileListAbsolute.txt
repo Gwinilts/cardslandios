@@ -1,0 +1,26 @@
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/fuckaroundios.iOS.exe
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/fuckaroundios.iOS.pdb
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/Plugin.Connectivity.Abstractions.dll
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/Plugin.Connectivity.dll
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/Plugin.Share.Abstractions.dll
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/Plugin.Share.dll
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.xml
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/Plugin.Share.Abstractions.pdb
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/Plugin.Share.Abstractions.xml
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/Plugin.Share.xml
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/Plugin.Connectivity.Abstractions.pdb
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/Plugin.Connectivity.Abstractions.xml
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/Plugin.Connectivity.pdb
+/Users/gwinilts/Projects/fuckaroundios/iOS/bin/iPhoneSimulator/Debug/Plugin.Connectivity.xml
+/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhoneSimulator/Debug/fuckaroundios.iOS.csprojAssemblyReference.cache
+/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhoneSimulator/Debug/fuckaroundios.iOS.csproj.CoreCompileInputs.cache
+/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhoneSimulator/Debug/fuckaroundios.iOS.csproj.CopyComplete
+/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhoneSimulator/Debug/fuckaroundios.iOS.exe
+/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhoneSimulator/Debug/fuckaroundios.iOS.pdb
+/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/ibtool/_BundleResourceWithLogicalName.items
+/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/_PartialAppManifest.items
+/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/_BundleResourceWithLogicalName.items
+/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/coremlc/_PartialAppManifest.items
+/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/coremlc/_BundleResourceWithLogicalName.items
+/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/optimized/

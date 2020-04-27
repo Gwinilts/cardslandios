@@ -1,0 +1,47 @@
+Function=SystemNative_ConvertErrorPlatformToPal
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ConvertErrorPalToPlatform
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_StrErrorR
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetNonCryptographicallySecureRandomBytes
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_OpenDir
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetReadDirRBufferSize
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ReadDirR
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_CloseDir
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetEGid
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetEUid
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_MkDir
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Stat2
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_LStat2
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Unlink
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_timezone_get_local_name
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_timezone_get_data
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_log
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_start_wwan
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/System.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_release_block_on_main_thread
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/gwinilts/Projects/fuckaroundios/iOS/obj/iPhone/Debug/device-builds/iphone7.2-11.2.6/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=mono_pmip
